@@ -28,4 +28,4 @@ User Input (Specific file): `/Users/shafik/personal/genex_assignment/test oindri
 
 
 ### Step-05:
-Out will be found in - `output.json` file.
+Output will be found in - `output.json` file.
