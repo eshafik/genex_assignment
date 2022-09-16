@@ -1,0 +1,9 @@
+.idea
+venv
+*.png
+*.jpeg
+*.jpg
+*.pdf
+*.zip
+*.rar
+app/*.json
