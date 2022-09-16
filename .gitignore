@@ -7,5 +7,6 @@ venv
 *.zip
 *.rar
 app/*.json
+*.json
 __pycache__/
 app/__pycache__/
