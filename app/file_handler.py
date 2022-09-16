@@ -20,7 +20,6 @@ class FileHandler:
 
     def get_file(self) -> Union[str, None]:
         """Collect a single file from file path"""
-        print("file_paht........", self.file_path.name)
         if self.file_path.name.split('.')[-1] == 'eml':
             return str(self.file_path)
         raise ValueError(f'No valid {self.file_ext} file found!')

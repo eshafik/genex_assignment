@@ -24,7 +24,7 @@ class EmailMetaDataProcessor:
         return re.sub(pattern, '', input_str)
 
     def extract_meta_data(self) -> namedtuple:
-        """Extracts: To, From, Subject and Date """
+        """Extracts: From, To, Cc, Subject and Date """
         Captions = namedtuple('Captions', ['from_email', 'to_email', 'cc_email', 'subject', 'date_time'])
         date_time = self.remove_special_characters((self.msg_obj.__contains__("date") and self.msg_obj['date'].strip())
                                                    ) or ''
@@ -90,7 +90,7 @@ class EmailContentProcessor:
         return name
 
     @staticmethod
-    def save_attachment_file(name, content):
+    def save_attachment_file(name: str, content: bytes):
         """Save file"""
         file = open(os.path.join(name), "wb")
         file.write(content)
@@ -133,7 +133,7 @@ class EmailContentProcessor:
                 payload = msg_obj.get_payload(part)
             except:
                 break
-            # pl is a new Message object which goes back to fetch_content
+            # payload is a new Message object which goes back to fetch_content
             content = self.fetch_content(payload)
             body_text += content.body_text
             body_html += content.body_html
