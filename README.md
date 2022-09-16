@@ -7,5 +7,11 @@
 ### Step-02:
 Change the directory to `app/`
 
-### Step-02:
+### Step-03:
 Run the main.py file - `python3 main.py`
+
+### Step-04:
+You have to input the directory or a file path to extract data from '.eml' file
+
+### Step-05:
+Out will be found in - `output.json` file.
