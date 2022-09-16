@@ -2,7 +2,7 @@
 #### Requirement: Python version greater than 3.5
 
 ### Step-01:
-`git pull origin https://github.com/eshafik/genex_assignment.git`
+`git clone https://github.com/eshafik/genex_assignment.git`
 
 ### Step-02:
 Change the directory to 'genex_assignment' directory - `cd genex_assignement/`
