@@ -5,7 +5,7 @@
 `git clone https://github.com/eshafik/genex_assignment.git`
 
 ### Step-02:
-Change the directory to 'genex_assignment' directory - `cd genex_assignement/`
+Change the directory to 'genex_assignment' directory - `cd genex_assignment/`
 
 ### Step-03:
 Run the main.py file - `python3 app/main.py`
